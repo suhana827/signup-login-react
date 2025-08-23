@@ -13,7 +13,7 @@ function App() {
 
   function handlingSubmission(e) {
     e.preventDefault(); // stops page refresh
-    console.log(userName, email, password); // shows entered data
+    console.log(userName, email, password, age, gender, phone); // shows entered data
   }
   
 

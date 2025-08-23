@@ -5,9 +5,15 @@ function FormHandling({ username, setUserName, email, setEmail,password,
     setPassword,age,setAge,gender,setGender,phone,setPhone,handlingSubmission,}) {
 
     return(
-        <div>
-            <form onSubmit={handlingSubmission}>
+       <>
+        <h1 id="myheading">Sign Up Form</h1>
+        
+            <form className="myDiv" onSubmit={handlingSubmission}>
 
+                <h2 id="heading2">Fill the form</h2>
+            
+              <label>
+                Username <br/>
                 <input
                 type="text"
                 id="username"
@@ -15,7 +21,11 @@ function FormHandling({ username, setUserName, email, setEmail,password,
                 value = {username}
                 onChange={(e) => setUserName(e.target.value)}
                 />
-
+                
+               </label>
+                
+                <label>
+                    Email <br/>
                 <input
                 type="text"
                 id="email"
@@ -24,6 +34,10 @@ function FormHandling({ username, setUserName, email, setEmail,password,
                 onChange={(e) => setEmail(e.target.value)}
                 />
 
+                </label>
+
+                <label>
+                 Password <br/>
                 <input
                 type="password"
                 id="password"
@@ -32,6 +46,10 @@ function FormHandling({ username, setUserName, email, setEmail,password,
                 onChange={(e) => setPassword(e.target.value)}
                 />
 
+                </label>
+                 
+                <label>
+                Age <br/>
                 <input
                 type="text"
                 id="age"
@@ -40,7 +58,10 @@ function FormHandling({ username, setUserName, email, setEmail,password,
                 onChange={(e) => setAge(e.target.value)}
                 />
 
+            </label>
+
                 <label>
+                Gender : <br/>
                 <input 
                     type="radio" 
                     name="gender" 
@@ -73,6 +94,8 @@ function FormHandling({ username, setUserName, email, setEmail,password,
                 Other
                 </label>
 
+                <label>
+                Phone <br/>
                 <input
                 type= "tel"
                 id="tel"
@@ -81,11 +104,14 @@ function FormHandling({ username, setUserName, email, setEmail,password,
                 onChange={(e) => setPhone(e.target.value)}
                 />
 
+            </label>
+
                 
-                <button type="submit">Submit</button>
+                <button type="submit" id="submitB">Submit</button>
 
             </form>
-        </div>
+        
+        </>
     )
 }
 

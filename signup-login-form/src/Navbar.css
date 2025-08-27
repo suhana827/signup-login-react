@@ -1,0 +1,23 @@
+.myClass {
+    border: 2px solid black;
+    height: 3.5rem;
+    background-color: darkblue;
+  }
+  
+  .navBar {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;       
+    height: 100%;
+    padding: 0 2rem;          
+  }
+  
+  .navBar a {
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-left: 2rem;  
+    text-decoration: none;
+  }
+  
+ 
